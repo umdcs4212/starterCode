@@ -94,12 +94,6 @@ add_subdirectory(src)
 add_subdirectory(examples)
 
 #
-# Renderer code
-#
-# Create your rendering library here....
-
-
-#
 # OpenGL Example
 #
 # This builds a simple OpenGL example that you can use to get started with OpenGL.

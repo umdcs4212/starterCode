@@ -6,6 +6,9 @@
 #
 include_directories(${CMAKE_SOURCE_DIR}/src)
 
+# Need to let cmake / c++ know where includes are...
+include_directories(${CMAKE_SOURCE_DIR}/renderlib)
+
 enable_testing()
 include(CTest)
 include(Catch)
@@ -19,7 +22,8 @@ include(Catch)
 # 
 set(UTESTS 
   utest_Success
-  utest_Failure)
+  utest_vec3
+  )
 
 # 
 # For each of the executables named in ${UTESTS}, compile them into a
