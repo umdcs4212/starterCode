@@ -13,11 +13,7 @@ target_link_libraries(cs4212-util PUBLIC glm::glm)
 add_executable(fbMain
   fbMain.cpp
 )
-target_link_libraries(fbMain cs4212-util)
-target_link_libraries(fbMain ${Boost_PROGRAM_OPTIONS_LIBRARIES})
-target_link_libraries(fbMain PNG::PNG)
-target_link_libraries(fbMain ZLIB::ZLIB)
-
-
-
-
+target_link_libraries(fbMain PRIVATE cs4212-util)
+target_link_libraries(fbMain PRIVATE ${Boost_PROGRAM_OPTIONS_LIBRARIES})
+target_link_libraries(fbMain PRIVATE PNG::PNG)
+target_link_libraries(fbMain PRIVATE ZLIB::ZLIB)
