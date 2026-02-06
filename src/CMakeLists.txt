@@ -7,6 +7,9 @@ add_library (cs4212-util
   ray.h
   Camera.h Camera.cpp
   PerspectiveCamera.h PerspectiveCamera.cpp
+  Shape.h
+  Sphere.h Sphere.cpp
+  Triangle.h Triangle.cpp
 )
 
 target_compile_definitions(cs4212-util PUBLIC HAS_GLM)
